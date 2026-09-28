@@ -1,0 +1,37 @@
+---
+layout: default
+title: Books
+---
+
+<h1>Books</h1>
+
+<div class="book-grid">
+
+{% for book in site.data.books %}
+
+  <article class="book">
+
+    <img src="{{ book.cover | relative_url }}"
+         alt="Cover of {{ book.title }}">
+
+    <h2>{{ book.title }}</h2>
+
+    <p>{{ book.description }}</p>
+
+    <dl>
+      <dt>Publisher</dt>
+      <dd>{{ book.publisher }}</dd>
+
+      <dt>ISBN</dt>
+      <dd>{{ book.isbn }}</dd>
+    </dl>
+
+    <a class="button" href="{{ book.buy_url }}">
+      Buy the Book
+    </a>
+
+  </article>
+
+{% endfor %}
+
+</div>

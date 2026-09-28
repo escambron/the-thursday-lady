@@ -1,0 +1,12 @@
+title: The Thursday Lady
+description: literary works by karla fc holloway
+url: "https://thethursdaylady.com"
+baseurl: ""
+
+author:
+  name: karla fc holloway
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
