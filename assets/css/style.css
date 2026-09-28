@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 2rem;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
@@ -37,11 +37,43 @@ a {
   border-bottom: 1px solid var(--rule);
 }
 
-.site-title {
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: right;
+  width: 100%;
+  padding: 0.45rem 0;
+
+  background: #f4efe5;
+  border-bottom: 1px solid var(--rule)
+}
+
+.header-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.site-title,
+.site-nav a {
   display: block;
   color: var(--ink);
   font-size: 2.2rem;
   text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  /* Subtle embossed / debossed appearance */
+  text-shadow:
+    1px 1px 0 rgba(255, 255, 255, 0.75),
+    -1px -1px 0 rgba(70, 65, 55, 0.18);
 }
 
 .tagline,
