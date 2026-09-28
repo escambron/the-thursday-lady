@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<section class="hero">
+
+  <p class="eyebrow">Legal Thrillers from the Deep South</p>
+
+  <h1>Justice Courtland</h1>
+
+  <p class="hero-line">
+    In the South, every secret has precedent.
+  </p>
+
+</section>
+
+
+<section>
+
+  <h2>The Books</h2>
+
+  <div class="book-grid">
+
+    {% for book in site.data.books %}
+
+      <article class="book">
+
+        <img src="{{ book.cover | relative_url }}"
+             alt="Cover of {{ book.title }}">
+
+        <h3>{{ book.title }}</h3>
+
+        <p>{{ book.description }}</p>
+
+        <a class="button" href="{{ book.buy_url }}">
+          Learn More
+        </a>
+
+      </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <h2>Upcoming Appearances</h2>
+
+  {% for event in site.data.events %}
+
+    <article class="event">
+
+      <time>
+        {{ event.date | date: "%B %d, %Y" }}
+      </time>
+
+      <div>
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.venue }} &mdash; {{ event.city }}</p>
+      </div>
+
+    </article>
+
+  {% endfor %}
+
+  <p>
+    <a href="{{ '/events.html' | relative_url }}">
+      All events →
+    </a>
+  </p>
+
+</section>
+
+
+<section>
+
+  <h2>The Author</h2>
+
+  <p>
+    Justice Courtland writes legal thrillers set among
+    the courthouses, old families, and buried histories
+    of the American South.
+  </p>
+
+  <p>
+    <a href="{{ '/about.html' | relative_url }}">
+      Read the biography →
+    </a>
+  </p>
+
+</section>

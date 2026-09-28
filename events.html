@@ -1,0 +1,33 @@
+---
+layout: default
+title: Events
+---
+
+<h1>Events</h1>
+
+{% for event in site.data.events %}
+
+<article class="event">
+
+  <time>
+    {{ event.date | date: "%B %d, %Y" }}
+  </time>
+
+  <div>
+
+    <h2>{{ event.title }}</h2>
+
+    <p>
+      {{ event.venue }}<br>
+      {{ event.city }}
+    </p>
+
+    {% if event.url != "#" %}
+      <a href="{{ event.url }}">Event details →</a>
+    {% endif %}
+
+  </div>
+
+</article>
+
+{% endfor %}

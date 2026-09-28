@@ -1,0 +1,12 @@
+title: Justice Courtland
+description: Legal thrillers from the Deep South
+url: "https://thethursdaylady.com"
+baseurl: ""
+
+author:
+  name: Justice Courtland
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
