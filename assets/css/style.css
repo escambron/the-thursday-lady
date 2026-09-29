@@ -43,10 +43,13 @@ a {
 
 .site-header > span{
   display: block;
+  padding-right:0.4rem;
   width:100%;
 }
 .site-header > nav {
   display: flex;
+  padding:0;
+  margin:0;
   justify-content: flex-start;
   border:#722f37;
 }
@@ -61,7 +64,9 @@ a {
   display: block;
   margin-top:2rem;
   color: var(--ink);
-  font-size: 0.65rem;
+  font-size: 0.76rem;
+  padding-right:1.1rem;
+  padding-bottom:0.2rem;
   font-family: var(--fancie);
   text-decoration: none;
   text-align: right;

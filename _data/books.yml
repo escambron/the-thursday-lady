@@ -4,8 +4,9 @@
   description: >
    The scales of justice sit in a thin, brown, flour-dusted hand that will change the course of American history. 
   publisher: "Rootstock Publishing"
-  isbn: "000-0-00-000000-0"
+  isbn: "TBD"
   buy_url: "#"
+  status: "Coming Soon"
 
 - title: "A Death in Harlem"
   year: 2019
@@ -14,4 +15,5 @@
     The district's first "colored" policeman, Weldon Thomas, investigates the death of a socialite in the bon vivant world of the Harlem Renaissance.
   publisher: "Placeholder Press"
   isbn: "978-0810140820"
-  buy_url: "#"
+  buy_url: "https://bookshop.org/p/books/a-death-in-harlem-karla-fc-holloway/10279981?ean=9780810140813"
+  status: "Buy the Book"
