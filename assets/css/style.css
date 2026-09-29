@@ -4,9 +4,10 @@
   --muted: #6f685f;
   --accent: #722f37;
   --rule: #c8bcaa;
-
+  --shade: #987c7a;
   --serif: Georgia, "Times New Roman", serif;
   --typewriter: "Courier New", Courier, monospace;
+  --fancie: "Jazz LET", fantasy
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  margin: 2rem;
+  margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
@@ -32,48 +33,38 @@ a {
 .site-header {
   max-width: 1100px;
   margin: auto;
-  padding: 2.5rem 2rem 1.5rem;
-  text-align: center;
   border-bottom: 1px solid var(--rule);
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  text-align: right;
-  width: 100%;
-  padding: 0.45rem 0;
-
-  background: #f4efe5;
-  border-bottom: 1px solid var(--rule)
-}
-
-.header-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-
+.header-box {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
 
-
-.site-title,
-.site-nav a {
+.site-header > span{
   display: block;
-  color: var(--ink);
-  font-size: 2.2rem;
-  text-decoration: none;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  width:100%;
+}
+.site-header > nav {
+  display: flex;
+  justify-content: flex-start;
+  border:#722f37;
+}
 
-  /* Subtle embossed / debossed appearance */
-  text-shadow:
-    1px 1px 0 rgba(255, 255, 255, 0.75),
-    -1px -1px 0 rgba(70, 65, 55, 0.18);
+.site-header > a {
+  width: 100%;
+  display:block;
+  text-align: right;
+}
+
+.site-title {
+  display: block;
+  margin-top:2rem;
+  color: var(--ink);
+  font-size: 0.65rem;
+  font-family: var(--fancie);
+  text-decoration: none;
+  text-align: right;
 }
 
 .tagline,
@@ -83,11 +74,17 @@ nav {
   font-family: var(--typewriter);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: var(--rule); 
+  text-shadow: 0 -1px -2px rgba(255,255,255,.3), 0 2px 2px var(--shade);
+  text-align: right;
+
 }
 
 .tagline {
   color: var(--muted);
   font-size: 0.75rem;
+  text-shadow: 0 -2px 3px rgba(255,255,255,.3), 0 2px 4px rgba(0,0,0,.2);
+
 }
 
 nav {
@@ -123,7 +120,7 @@ section {
 
 .hero h1 {
   margin: 0.3rem 0;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2rem, 6vw, 4rem);
   font-weight: normal;
   line-height: 1;
 }
