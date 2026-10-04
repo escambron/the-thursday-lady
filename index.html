@@ -9,7 +9,7 @@ layout: default
   <h1>karla fc holloway</h1>
 
   <p class="hero-line">
-    books and birthday cake
+    
   </p>
 
 </section>
@@ -17,11 +17,11 @@ layout: default
 
 <section>
 
-  <h2>The Books</h2>
+  <!-- h2>The Books</h2> -->
 
-  <div class="book-grid">
+  <div class="book-grid-index">
 
-    {% for book in site.data.books %}
+    {% for book in site.data.featuredbooks %}
 
       <article class="book">
 
@@ -30,8 +30,15 @@ layout: default
 
         <h3>{{ book.title }}</h3>
 
-        <p>{{ book.description }}</p>
+        <p class="desc" >{{ book.description }}</p>
 
+	   {% for blurb in book.blurbs %}
+             <p class="blurb" >{{ blurb.text }}</p>
+	
+             <p class="blurbauthor" >{{ blurb.author }}</p>
+	     <p class="blurbcreds" >{{ blurb.creds }}</p>
+
+	   {% endfor %}  
         <a class="button" href="{{ book.buy_url }}">
           Learn More
         </a>

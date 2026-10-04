@@ -89,7 +89,6 @@ nav {
   color: var(--muted);
   font-size: 0.75rem;
   text-shadow: 0 -2px 3px rgba(255,255,255,.3), 0 2px 4px rgba(0,0,0,.2);
-
 }
 
 nav {
@@ -157,13 +156,47 @@ h2 {
   gap: 4rem;
 }
 
+.book-grid-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
 .book img {
+  margin: 0 auto;
   display: block;
   width: 100%;
   max-width: 320px;
   aspect-ratio: 2 / 3;
   object-fit: cover;
   background: #ddd4c5;
+}
+
+.desc{
+  margin: 0 auto;
+  text-align: center;  
+  display: block;
+  width: 100%;
+  letter-spacing: 0.095em;  
+  font-size: 1.3rem;
+}
+
+.blurb{
+  font-style: italic;
+}
+
+.blurbauthor{
+  text-align: right;
+  font-family: var(--typewriter);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.blurbcreds{
+  text-align: right;
+  font-family: var(--typewriter);
+  font-size: 0.75rem;
+  font-style: italic;
 }
 
 .button {
