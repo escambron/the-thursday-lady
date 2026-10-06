@@ -30,18 +30,17 @@ layout: default
 
         <h3>{{ book.title }}</h3>
 
-        <p class="desc" >{{ book.description }}</p>
+	<p class="desc" >{{ book.description }}</p>
+	<div class="c-box">
+          <a class="button" href="{{ book.buy_url }}">      Learn More      </a>
+	</div>
 
 	   {% for blurb in book.blurbs %}
-             <p class="blurb" >{{ blurb.text }}</p>
-	
+             <p class="blurb" >{{ blurb.text }}</p>	
              <p class="blurbauthor" >{{ blurb.author }}</p>
 	     <p class="blurbcreds" >{{ blurb.creds }}</p>
 
 	   {% endfor %}  
-        <a class="button" href="{{ book.buy_url }}">
-          Learn More
-        </a>
 
       </article>
 

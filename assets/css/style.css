@@ -41,6 +41,11 @@ a {
   width: 100%;
 }
 
+.c-box {
+  display: flex;
+  justify-content: center;    
+}
+
 .site-header > span{
   display: block;
   padding-right:0.4rem;
@@ -198,7 +203,7 @@ h2 {
   display: block;
   width: 100%;
   letter-spacing: 0.095em;  
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .blurb{
@@ -219,9 +224,10 @@ h2 {
   font-style: italic;
 }
 
+
 .button {
   display: inline-block;
-  margin-top: 1rem;
+  margin: 1rem;
   padding: 0.55rem 0.9rem;
   border: 1px solid var(--accent);
   text-decoration: none;
