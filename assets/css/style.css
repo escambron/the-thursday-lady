@@ -191,7 +191,7 @@ h2 {
   margin: 0 auto;
   display: block;
   width: 100%;
-  max-width: 320px;
+  max-width: 450px;
   aspect-ratio: 2 / 3;
   object-fit: cover;
   background: #ddd4c5;
